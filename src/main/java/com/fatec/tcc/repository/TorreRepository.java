@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface TorreRepository extends JpaRepository<Torre, Long> {
+    Torre findByName(String name);
 }
