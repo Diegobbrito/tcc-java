@@ -21,9 +21,9 @@ public class MensagemController {
         return ResponseEntity.ok().body(mensagens);
     }
 
-    @GetMapping()
-    public ResponseEntity<List<Mensagem>> find(@RequestBody String mensagem){
-        List<Mensagem> mensagens = mensagemService.findMessage(mensagem);
-        return ResponseEntity.ok().body(mensagens);
-    }
+//    @GetMapping()
+//    public ResponseEntity<List<Mensagem>> buscarMensagem(@RequestBody String mensagem){
+//        List<Mensagem> mensagens = mensagemService.findMessage(mensagem);
+//        return ResponseEntity.ok().body(mensagens);
+//    }
 }
